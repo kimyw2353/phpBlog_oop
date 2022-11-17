@@ -1,0 +1,324 @@
+Error: Class 'App\Providers\SessionServiceProvider' not found in /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php:24
+Stack trace:
+#0 [internal function]: Eclair\Application->Eclair\{closure}('App\\Providers\\S...', 1)
+#1 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(24): array_walk(Array, Object(Closure))
+#2 /Users/ywkim/StudyPHP/php_blog/bootstrap/app.php(6): Eclair\Application->__construct(Array)
+#3 /Users/ywkim/StudyPHP/php_blog/public/index.php(5): require_once('/Users/ywkim/St...')
+#4 {main}
+Error: Class 'App\Providers\SessionServiceProvider' not found in /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php:24
+Stack trace:
+#0 [internal function]: Eclair\Application->Eclair\{closure}('App\\Providers\\S...', 1)
+#1 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(24): array_walk(Array, Object(Closure))
+#2 /Users/ywkim/StudyPHP/php_blog/bootstrap/app.php(6): Eclair\Application->__construct(Array)
+#3 /Users/ywkim/StudyPHP/php_blog/public/index.php(5): require_once('/Users/ywkim/St...')
+#4 {main}
+Error: Class 'App\Providers\ServiceProvider' not found in /Users/ywkim/StudyPHP/php_blog/app/Providers/SessionServiceProvider.php:7
+Stack trace:
+#0 /Users/ywkim/StudyPHP/php_blog/vendor/composer/ClassLoader.php(571): include()
+#1 /Users/ywkim/StudyPHP/php_blog/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile('/Users/ywkim/St...')
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Providers\\S...')
+#3 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(24): spl_autoload_call('App\\Providers\\S...')
+#4 [internal function]: Eclair\Application->Eclair\{closure}('App\\Providers\\S...', 1)
+#5 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(24): array_walk(Array, Object(Closure))
+#6 /Users/ywkim/StudyPHP/php_blog/bootstrap/app.php(6): Eclair\Application->__construct(Array)
+#7 /Users/ywkim/StudyPHP/php_blog/public/index.php(5): require_once('/Users/ywkim/St...')
+#8 {main}
+Error: Class 'App\Providers\ServiceProvider' not found in /Users/ywkim/StudyPHP/php_blog/app/Providers/SessionServiceProvider.php:7
+Stack trace:
+#0 /Users/ywkim/StudyPHP/php_blog/vendor/composer/ClassLoader.php(571): include()
+#1 /Users/ywkim/StudyPHP/php_blog/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile('/Users/ywkim/St...')
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Providers\\S...')
+#3 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(24): spl_autoload_call('App\\Providers\\S...')
+#4 [internal function]: Eclair\Application->Eclair\{closure}('App\\Providers\\S...', 1)
+#5 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(24): array_walk(Array, Object(Closure))
+#6 /Users/ywkim/StudyPHP/php_blog/bootstrap/app.php(6): Eclair\Application->__construct(Array)
+#7 /Users/ywkim/StudyPHP/php_blog/public/index.php(5): require_once('/Users/ywkim/St...')
+#8 {main}
+Error: Class 'DatabaseSessionHandler' not found in /Users/ywkim/StudyPHP/php_blog/app/Providers/SessionServiceProvider.php:12
+Stack trace:
+#0 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(24): App\Providers\SessionServiceProvider::register()
+#1 [internal function]: Eclair\Application->Eclair\{closure}('App\\Providers\\S...', 1)
+#2 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(24): array_walk(Array, Object(Closure))
+#3 /Users/ywkim/StudyPHP/php_blog/bootstrap/app.php(6): Eclair\Application->__construct(Array)
+#4 /Users/ywkim/StudyPHP/php_blog/public/index.php(5): require_once('/Users/ywkim/St...')
+#5 {main}
+Error: Call to a member function prepare() on null in /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Database/Adaptor.php:35
+Stack trace:
+#0 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Database/Adaptor.php(50): Eclair\Database\Adaptor::exec('SELECT * FROM s...', Array)
+#1 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Session/DatabaseSessionHandler.php(48): Eclair\Database\Adaptor::getAll('SELECT * FROM s...', Array)
+#2 [internal function]: Eclair\Session\DatabaseSessionHandler->read('b0ct14gcr6su74f...')
+#3 /Users/ywkim/StudyPHP/php_blog/app/Providers/SessionServiceProvider.php(17): session_start()
+#4 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(32): App\Providers\SessionServiceProvider::boot()
+#5 [internal function]: Eclair\Application->Eclair\{closure}('App\\Providers\\S...', 1)
+#6 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(32): array_walk(Array, Object(Closure))
+#7 /Users/ywkim/StudyPHP/php_blog/public/index.php(7): Eclair\Application->boot()
+#8 {main}
+Error: Call to a member function prepare() on null in /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Database/Adaptor.php:35
+Stack trace:
+#0 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Database/Adaptor.php(50): Eclair\Database\Adaptor::exec('SELECT * FROM s...', Array)
+#1 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Session/DatabaseSessionHandler.php(48): Eclair\Database\Adaptor::getAll('SELECT * FROM s...', Array)
+#2 [internal function]: Eclair\Session\DatabaseSessionHandler->read('b0ct14gcr6su74f...')
+#3 /Users/ywkim/StudyPHP/php_blog/app/Providers/SessionServiceProvider.php(17): session_start()
+#4 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(32): App\Providers\SessionServiceProvider::boot()
+#5 [internal function]: Eclair\Application->Eclair\{closure}('App\\Providers\\S...', 1)
+#6 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(32): array_walk(Array, Object(Closure))
+#7 /Users/ywkim/StudyPHP/php_blog/public/index.php(7): Eclair\Application->boot()
+#8 {main}
+Error: Call to a member function prepare() on null in /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Database/Adaptor.php:35
+Stack trace:
+#0 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Database/Adaptor.php(50): Eclair\Database\Adaptor::exec('SELECT * FROM s...', Array)
+#1 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Session/DatabaseSessionHandler.php(48): Eclair\Database\Adaptor::getAll('SELECT * FROM s...', Array)
+#2 [internal function]: Eclair\Session\DatabaseSessionHandler->read('b0ct14gcr6su74f...')
+#3 /Users/ywkim/StudyPHP/php_blog/app/Providers/SessionServiceProvider.php(17): session_start()
+#4 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(32): App\Providers\SessionServiceProvider::boot()
+#5 [internal function]: Eclair\Application->Eclair\{closure}('App\\Providers\\S...', 1)
+#6 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(32): array_walk(Array, Object(Closure))
+#7 /Users/ywkim/StudyPHP/php_blog/public/index.php(7): Eclair\Application->boot()
+#8 {main}
+Error: Call to a member function prepare() on null in /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Database/Adaptor.php:35
+Stack trace:
+#0 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Database/Adaptor.php(50): Eclair\Database\Adaptor::exec('SELECT * FROM s...', Array)
+#1 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Session/DatabaseSessionHandler.php(48): Eclair\Database\Adaptor::getAll('SELECT * FROM s...', Array)
+#2 [internal function]: Eclair\Session\DatabaseSessionHandler->read('b0ct14gcr6su74f...')
+#3 /Users/ywkim/StudyPHP/php_blog/app/Providers/SessionServiceProvider.php(17): session_start()
+#4 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(32): App\Providers\SessionServiceProvider::boot()
+#5 [internal function]: Eclair\Application->Eclair\{closure}('App\\Providers\\S...', 1)
+#6 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(32): array_walk(Array, Object(Closure))
+#7 /Users/ywkim/StudyPHP/php_blog/public/index.php(7): Eclair\Application->boot()
+#8 {main}
+Error: Call to undefined method App\User::getUsername() in /Users/ywkim/StudyPHP/php_blog/app/Post.php:90
+Stack trace:
+#0 /Users/ywkim/StudyPHP/php_blog/resources/views/index.php(9): App\Post->getUsername()
+#1 /Users/ywkim/StudyPHP/php_blog/resources/views/layouts/app.php(32): require_once('/Users/ywkim/St...')
+#2 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Support/Theme.php(37): require_once('/Users/ywkim/St...')
+#3 /Users/ywkim/StudyPHP/php_blog/app/Controllers/IndexController.php(20): Eclair\Support\Theme::view('index', Array)
+#4 [internal function]: App\Controllers\IndexController::index()
+#5 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Routing/Route.php(37): call_user_func('\\App\\Controller...')
+#6 /Users/ywkim/StudyPHP/php_blog/app/Providers/RouteServiceProvider.php(17): Eclair\Routing\Route::run()
+#7 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(32): App\Providers\RouteServiceProvider::boot()
+#8 [internal function]: Eclair\Application->Eclair\{closure}('App\\Providers\\R...', 4)
+#9 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(32): array_walk(Array, Object(Closure))
+#10 /Users/ywkim/StudyPHP/php_blog/public/index.php(7): Eclair\Application->boot()
+#11 {main}
+Error: Call to undefined method App\User::getUsername() in /Users/ywkim/StudyPHP/php_blog/app/Post.php:90
+Stack trace:
+#0 /Users/ywkim/StudyPHP/php_blog/resources/views/index.php(9): App\Post->getUsername()
+#1 /Users/ywkim/StudyPHP/php_blog/resources/views/layouts/app.php(32): require_once('/Users/ywkim/St...')
+#2 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Support/Theme.php(37): require_once('/Users/ywkim/St...')
+#3 /Users/ywkim/StudyPHP/php_blog/app/Controllers/IndexController.php(20): Eclair\Support\Theme::view('index', Array)
+#4 [internal function]: App\Controllers\IndexController::index()
+#5 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Routing/Route.php(37): call_user_func('\\App\\Controller...')
+#6 /Users/ywkim/StudyPHP/php_blog/app/Providers/RouteServiceProvider.php(17): Eclair\Routing\Route::run()
+#7 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(32): App\Providers\RouteServiceProvider::boot()
+#8 [internal function]: Eclair\Application->Eclair\{closure}('App\\Providers\\R...', 4)
+#9 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(32): array_walk(Array, Object(Closure))
+#10 /Users/ywkim/StudyPHP/php_blog/public/index.php(7): Eclair\Application->boot()
+#11 {main}
+Error: Call to undefined method App\User::getUsername() in /Users/ywkim/StudyPHP/php_blog/app/Post.php:90
+Stack trace:
+#0 /Users/ywkim/StudyPHP/php_blog/resources/views/index.php(9): App\Post->getUsername()
+#1 /Users/ywkim/StudyPHP/php_blog/resources/views/layouts/app.php(32): require_once('/Users/ywkim/St...')
+#2 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Support/Theme.php(37): require_once('/Users/ywkim/St...')
+#3 /Users/ywkim/StudyPHP/php_blog/app/Controllers/IndexController.php(20): Eclair\Support\Theme::view('index', Array)
+#4 [internal function]: App\Controllers\IndexController::index()
+#5 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Routing/Route.php(37): call_user_func('\\App\\Controller...')
+#6 /Users/ywkim/StudyPHP/php_blog/app/Providers/RouteServiceProvider.php(17): Eclair\Routing\Route::run()
+#7 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(32): App\Providers\RouteServiceProvider::boot()
+#8 [internal function]: Eclair\Application->Eclair\{closure}('App\\Providers\\R...', 4)
+#9 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(32): array_walk(Array, Object(Closure))
+#10 /Users/ywkim/StudyPHP/php_blog/public/index.php(7): Eclair\Application->boot()
+#11 {main}
+Error: Call to undefined method App\User::getUsername() in /Users/ywkim/StudyPHP/php_blog/app/Post.php:90
+Stack trace:
+#0 /Users/ywkim/StudyPHP/php_blog/resources/views/index.php(9): App\Post->getUsername()
+#1 /Users/ywkim/StudyPHP/php_blog/resources/views/layouts/app.php(32): require_once('/Users/ywkim/St...')
+#2 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Support/Theme.php(37): require_once('/Users/ywkim/St...')
+#3 /Users/ywkim/StudyPHP/php_blog/app/Controllers/IndexController.php(20): Eclair\Support\Theme::view('index', Array)
+#4 [internal function]: App\Controllers\IndexController::index()
+#5 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Routing/Route.php(37): call_user_func('\\App\\Controller...')
+#6 /Users/ywkim/StudyPHP/php_blog/app/Providers/RouteServiceProvider.php(17): Eclair\Routing\Route::run()
+#7 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(32): App\Providers\RouteServiceProvider::boot()
+#8 [internal function]: Eclair\Application->Eclair\{closure}('App\\Providers\\R...', 4)
+#9 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(32): array_walk(Array, Object(Closure))
+#10 /Users/ywkim/StudyPHP/php_blog/public/index.php(7): Eclair\Application->boot()
+#11 {main}
+Error: Call to undefined method App\User::getUsername() in /Users/ywkim/StudyPHP/php_blog/app/Post.php:90
+Stack trace:
+#0 /Users/ywkim/StudyPHP/php_blog/resources/views/index.php(9): App\Post->getUsername()
+#1 /Users/ywkim/StudyPHP/php_blog/resources/views/layouts/app.php(32): require_once('/Users/ywkim/St...')
+#2 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Support/Theme.php(37): require_once('/Users/ywkim/St...')
+#3 /Users/ywkim/StudyPHP/php_blog/app/Controllers/IndexController.php(20): Eclair\Support\Theme::view('index', Array)
+#4 [internal function]: App\Controllers\IndexController::index()
+#5 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Routing/Route.php(37): call_user_func('\\App\\Controller...')
+#6 /Users/ywkim/StudyPHP/php_blog/app/Providers/RouteServiceProvider.php(17): Eclair\Routing\Route::run()
+#7 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(32): App\Providers\RouteServiceProvider::boot()
+#8 [internal function]: Eclair\Application->Eclair\{closure}('App\\Providers\\R...', 4)
+#9 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(32): array_walk(Array, Object(Closure))
+#10 /Users/ywkim/StudyPHP/php_blog/public/index.php(7): Eclair\Application->boot()
+#11 {main}
+Error: Call to undefined method App\User::getUsername() in /Users/ywkim/StudyPHP/php_blog/app/Post.php:90
+Stack trace:
+#0 /Users/ywkim/StudyPHP/php_blog/resources/views/index.php(9): App\Post->getUsername()
+#1 /Users/ywkim/StudyPHP/php_blog/resources/views/layouts/app.php(32): require_once('/Users/ywkim/St...')
+#2 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Support/Theme.php(37): require_once('/Users/ywkim/St...')
+#3 /Users/ywkim/StudyPHP/php_blog/app/Controllers/IndexController.php(20): Eclair\Support\Theme::view('index', Array)
+#4 [internal function]: App\Controllers\IndexController::index()
+#5 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Routing/Route.php(37): call_user_func('\\App\\Controller...')
+#6 /Users/ywkim/StudyPHP/php_blog/app/Providers/RouteServiceProvider.php(17): Eclair\Routing\Route::run()
+#7 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(32): App\Providers\RouteServiceProvider::boot()
+#8 [internal function]: Eclair\Application->Eclair\{closure}('App\\Providers\\R...', 4)
+#9 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(32): array_walk(Array, Object(Closure))
+#10 /Users/ywkim/StudyPHP/php_blog/public/index.php(7): Eclair\Application->boot()
+#11 {main}
+Error: Call to undefined method App\User::getUsername() in /Users/ywkim/StudyPHP/php_blog/app/Post.php:90
+Stack trace:
+#0 /Users/ywkim/StudyPHP/php_blog/resources/views/index.php(9): App\Post->getUsername()
+#1 /Users/ywkim/StudyPHP/php_blog/resources/views/layouts/app.php(32): require_once('/Users/ywkim/St...')
+#2 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Support/Theme.php(37): require_once('/Users/ywkim/St...')
+#3 /Users/ywkim/StudyPHP/php_blog/app/Controllers/IndexController.php(20): Eclair\Support\Theme::view('index', Array)
+#4 [internal function]: App\Controllers\IndexController::index()
+#5 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Routing/Route.php(37): call_user_func('\\App\\Controller...')
+#6 /Users/ywkim/StudyPHP/php_blog/app/Providers/RouteServiceProvider.php(17): Eclair\Routing\Route::run()
+#7 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(32): App\Providers\RouteServiceProvider::boot()
+#8 [internal function]: Eclair\Application->Eclair\{closure}('App\\Providers\\R...', 4)
+#9 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(32): array_walk(Array, Object(Closure))
+#10 /Users/ywkim/StudyPHP/php_blog/public/index.php(7): Eclair\Application->boot()
+#11 {main}
+Error: Call to undefined method App\User::getUsername() in /Users/ywkim/StudyPHP/php_blog/app/Post.php:90
+Stack trace:
+#0 /Users/ywkim/StudyPHP/php_blog/resources/views/index.php(9): App\Post->getUsername()
+#1 /Users/ywkim/StudyPHP/php_blog/resources/views/layouts/app.php(32): require_once('/Users/ywkim/St...')
+#2 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Support/Theme.php(37): require_once('/Users/ywkim/St...')
+#3 /Users/ywkim/StudyPHP/php_blog/app/Controllers/IndexController.php(20): Eclair\Support\Theme::view('index', Array)
+#4 [internal function]: App\Controllers\IndexController::index()
+#5 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Routing/Route.php(37): call_user_func('\\App\\Controller...')
+#6 /Users/ywkim/StudyPHP/php_blog/app/Providers/RouteServiceProvider.php(17): Eclair\Routing\Route::run()
+#7 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(32): App\Providers\RouteServiceProvider::boot()
+#8 [internal function]: Eclair\Application->Eclair\{closure}('App\\Providers\\R...', 4)
+#9 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(32): array_walk(Array, Object(Closure))
+#10 /Users/ywkim/StudyPHP/php_blog/public/index.php(7): Eclair\Application->boot()
+#11 {main}
+Error: Undefined constant 'App\Controllers\UserController' in /Users/ywkim/StudyPHP/php_blog/routes/web.php:7
+Stack trace:
+#0 /Users/ywkim/StudyPHP/php_blog/app/Providers/RouteServiceProvider.php(12): require_once()
+#1 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(24): App\Providers\RouteServiceProvider::register()
+#2 [internal function]: Eclair\Application->Eclair\{closure}('App\\Providers\\R...', 4)
+#3 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(24): array_walk(Array, Object(Closure))
+#4 /Users/ywkim/StudyPHP/php_blog/bootstrap/app.php(6): Eclair\Application->__construct(Array)
+#5 /Users/ywkim/StudyPHP/php_blog/public/index.php(5): require_once('/Users/ywkim/St...')
+#6 {main}
+Error: Undefined constant 'App\Controllers\UserController' in /Users/ywkim/StudyPHP/php_blog/routes/web.php:7
+Stack trace:
+#0 /Users/ywkim/StudyPHP/php_blog/app/Providers/RouteServiceProvider.php(12): require_once()
+#1 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(24): App\Providers\RouteServiceProvider::register()
+#2 [internal function]: Eclair\Application->Eclair\{closure}('App\\Providers\\R...', 4)
+#3 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(24): array_walk(Array, Object(Closure))
+#4 /Users/ywkim/StudyPHP/php_blog/bootstrap/app.php(6): Eclair\Application->__construct(Array)
+#5 /Users/ywkim/StudyPHP/php_blog/public/index.php(5): require_once('/Users/ywkim/St...')
+#6 {main}
+Error: Undefined constant 'App\Controllers\UserController' in /Users/ywkim/StudyPHP/php_blog/routes/web.php:7
+Stack trace:
+#0 /Users/ywkim/StudyPHP/php_blog/app/Providers/RouteServiceProvider.php(12): require_once()
+#1 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(24): App\Providers\RouteServiceProvider::register()
+#2 [internal function]: Eclair\Application->Eclair\{closure}('App\\Providers\\R...', 4)
+#3 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(24): array_walk(Array, Object(Closure))
+#4 /Users/ywkim/StudyPHP/php_blog/bootstrap/app.php(6): Eclair\Application->__construct(Array)
+#5 /Users/ywkim/StudyPHP/php_blog/public/index.php(5): require_once('/Users/ywkim/St...')
+#6 {main}
+Error: Undefined constant 'App\Controllers\UserController' in /Users/ywkim/StudyPHP/php_blog/routes/web.php:7
+Stack trace:
+#0 /Users/ywkim/StudyPHP/php_blog/app/Providers/RouteServiceProvider.php(12): require_once()
+#1 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(24): App\Providers\RouteServiceProvider::register()
+#2 [internal function]: Eclair\Application->Eclair\{closure}('App\\Providers\\R...', 4)
+#3 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(24): array_walk(Array, Object(Closure))
+#4 /Users/ywkim/StudyPHP/php_blog/bootstrap/app.php(6): Eclair\Application->__construct(Array)
+#5 /Users/ywkim/StudyPHP/php_blog/public/index.php(5): require_once('/Users/ywkim/St...')
+#6 {main}
+Error: Undefined constant 'App\Controllers\UserController' in /Users/ywkim/StudyPHP/php_blog/routes/web.php:7
+Stack trace:
+#0 /Users/ywkim/StudyPHP/php_blog/app/Providers/RouteServiceProvider.php(12): require_once()
+#1 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(24): App\Providers\RouteServiceProvider::register()
+#2 [internal function]: Eclair\Application->Eclair\{closure}('App\\Providers\\R...', 4)
+#3 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(24): array_walk(Array, Object(Closure))
+#4 /Users/ywkim/StudyPHP/php_blog/bootstrap/app.php(6): Eclair\Application->__construct(Array)
+#5 /Users/ywkim/StudyPHP/php_blog/public/index.php(5): require_once('/Users/ywkim/St...')
+#6 {main}
+Error: Undefined constant 'App\Controllers\UserController' in /Users/ywkim/StudyPHP/php_blog/routes/web.php:7
+Stack trace:
+#0 /Users/ywkim/StudyPHP/php_blog/app/Providers/RouteServiceProvider.php(12): require_once()
+#1 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(24): App\Providers\RouteServiceProvider::register()
+#2 [internal function]: Eclair\Application->Eclair\{closure}('App\\Providers\\R...', 4)
+#3 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(24): array_walk(Array, Object(Closure))
+#4 /Users/ywkim/StudyPHP/php_blog/bootstrap/app.php(6): Eclair\Application->__construct(Array)
+#5 /Users/ywkim/StudyPHP/php_blog/public/index.php(5): require_once('/Users/ywkim/St...')
+#6 {main}
+Error: Undefined constant 'App\Controllers\UserController' in /Users/ywkim/StudyPHP/php_blog/routes/web.php:7
+Stack trace:
+#0 /Users/ywkim/StudyPHP/php_blog/app/Providers/RouteServiceProvider.php(12): require_once()
+#1 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(24): App\Providers\RouteServiceProvider::register()
+#2 [internal function]: Eclair\Application->Eclair\{closure}('App\\Providers\\R...', 4)
+#3 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(24): array_walk(Array, Object(Closure))
+#4 /Users/ywkim/StudyPHP/php_blog/bootstrap/app.php(6): Eclair\Application->__construct(Array)
+#5 /Users/ywkim/StudyPHP/php_blog/public/index.php(5): require_once('/Users/ywkim/St...')
+#6 {main}
+Error: Undefined constant 'App\Controllers\UserController' in /Users/ywkim/StudyPHP/php_blog/routes/web.php:7
+Stack trace:
+#0 /Users/ywkim/StudyPHP/php_blog/app/Providers/RouteServiceProvider.php(12): require_once()
+#1 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(24): App\Providers\RouteServiceProvider::register()
+#2 [internal function]: Eclair\Application->Eclair\{closure}('App\\Providers\\R...', 4)
+#3 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(24): array_walk(Array, Object(Closure))
+#4 /Users/ywkim/StudyPHP/php_blog/bootstrap/app.php(6): Eclair\Application->__construct(Array)
+#5 /Users/ywkim/StudyPHP/php_blog/public/index.php(5): require_once('/Users/ywkim/St...')
+#6 {main}
+Error: Undefined constant 'App\Controllers\UserController' in /Users/ywkim/StudyPHP/php_blog/routes/web.php:7
+Stack trace:
+#0 /Users/ywkim/StudyPHP/php_blog/app/Providers/RouteServiceProvider.php(12): require_once()
+#1 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(24): App\Providers\RouteServiceProvider::register()
+#2 [internal function]: Eclair\Application->Eclair\{closure}('App\\Providers\\R...', 4)
+#3 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(24): array_walk(Array, Object(Closure))
+#4 /Users/ywkim/StudyPHP/php_blog/bootstrap/app.php(6): Eclair\Application->__construct(Array)
+#5 /Users/ywkim/StudyPHP/php_blog/public/index.php(5): require_once('/Users/ywkim/St...')
+#6 {main}
+Error: Undefined constant 'App\Controllers\UserController' in /Users/ywkim/StudyPHP/php_blog/routes/web.php:7
+Stack trace:
+#0 /Users/ywkim/StudyPHP/php_blog/app/Providers/RouteServiceProvider.php(12): require_once()
+#1 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(24): App\Providers\RouteServiceProvider::register()
+#2 [internal function]: Eclair\Application->Eclair\{closure}('App\\Providers\\R...', 4)
+#3 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(24): array_walk(Array, Object(Closure))
+#4 /Users/ywkim/StudyPHP/php_blog/bootstrap/app.php(6): Eclair\Application->__construct(Array)
+#5 /Users/ywkim/StudyPHP/php_blog/public/index.php(5): require_once('/Users/ywkim/St...')
+#6 {main}
+Error: Call to undefined method App\User::getUsername() in /Users/ywkim/StudyPHP/php_blog/app/Post.php:90
+Stack trace:
+#0 /Users/ywkim/StudyPHP/php_blog/resources/views/index.php(9): App\Post->getUsername()
+#1 /Users/ywkim/StudyPHP/php_blog/resources/views/layouts/app.php(32): require_once('/Users/ywkim/St...')
+#2 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Support/Theme.php(37): require_once('/Users/ywkim/St...')
+#3 /Users/ywkim/StudyPHP/php_blog/app/Controllers/IndexController.php(20): Eclair\Support\Theme::view('index', Array)
+#4 [internal function]: App\Controllers\IndexController::index()
+#5 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Routing/Route.php(37): call_user_func('\\App\\Controller...')
+#6 /Users/ywkim/StudyPHP/php_blog/app/Providers/RouteServiceProvider.php(17): Eclair\Routing\Route::run()
+#7 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(32): App\Providers\RouteServiceProvider::boot()
+#8 [internal function]: Eclair\Application->Eclair\{closure}('App\\Providers\\R...', 4)
+#9 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(32): array_walk(Array, Object(Closure))
+#10 /Users/ywkim/StudyPHP/php_blog/public/index.php(7): Eclair\Application->boot()
+#11 {main}
+ParseError: syntax error, unexpected '}', expecting '(' in /Users/ywkim/StudyPHP/php_blog/app/User.php:8
+Stack trace:
+#0 /Users/ywkim/StudyPHP/php_blog/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile('/Users/ywkim/St...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\User')
+#2 [internal function]: spl_autoload_call('App\\User')
+#3 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Database/Adaptor.php(51): PDOStatement->fetchAll(8, 'App\\User')
+#4 /Users/ywkim/StudyPHP/php_blog/app/Post.php(57): Eclair\Database\Adaptor::getAll('SELECT * FROM u...', Array, 'App\\User')
+#5 /Users/ywkim/StudyPHP/php_blog/app/Post.php(90): App\Post->user()
+#6 /Users/ywkim/StudyPHP/php_blog/resources/views/index.php(9): App\Post->getUserName()
+#7 /Users/ywkim/StudyPHP/php_blog/resources/views/layouts/app.php(32): require_once('/Users/ywkim/St...')
+#8 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Support/Theme.php(37): require_once('/Users/ywkim/St...')
+#9 /Users/ywkim/StudyPHP/php_blog/app/Controllers/IndexController.php(20): Eclair\Support\Theme::view('index', Array)
+#10 [internal function]: App\Controllers\IndexController::index()
+#11 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Routing/Route.php(37): call_user_func('\\App\\Controller...')
+#12 /Users/ywkim/StudyPHP/php_blog/app/Providers/RouteServiceProvider.php(17): Eclair\Routing\Route::run()
+#13 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(32): App\Providers\RouteServiceProvider::boot()
+#14 [internal function]: Eclair\Application->Eclair\{closure}('App\\Providers\\R...', 4)
+#15 /Users/ywkim/StudyPHP/php_blog/vendor/heracles8562/eclair/src/Application.php(32): array_walk(Array, Object(Closure))
+#16 /Users/ywkim/StudyPHP/php_blog/public/index.php(7): Eclair\Application->boot()
+#17 {main}
