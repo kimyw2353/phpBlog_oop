@@ -2,22 +2,31 @@
 
 namespace App\Controllers;
 
+use App\Services\UserService;
+use App\User;
 use Eclair\Support\Theme;
-use App\Services\IndexService;
 
 class UserController
 {
-    /**
-     * Show Posts (GET)
-     *
-     * @param int $page
-     */
-    public static function index()
+    public static function showRegisterForm()
     {
-        $page = filter_input(INPUT_GET, 'page', FILTER_VALIDATE_INT) ?: 0;
-
-        return Theme::view('index', [
-            'posts' => IndexService::getPosts($page, 3)
-        ]);
+		return Theme::view('auth', [
+			'requestUrl' => '/users'
+		]);
     }
+	
+	public static function store()
+	{
+		$user = new User();
+		
+		$user->email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL, FILTER_SANITIZE_EMAIL);
+		$user->password = password_hash(filter_input(INPUT_POST, 'password'), PASSWORD_DEFAULT);
+		
+		
+		$loc = UserService::register($user)
+			? 'Location: /auth/login'
+			: "Location: ".$_SERVER['HTTP_REFERER'];
+		
+		return header($loc);
+	}
 }
