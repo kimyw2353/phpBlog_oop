@@ -4,17 +4,6 @@ namespace App;
 
 use Eclair\Database\Adaptor;
 
-/* CREATE TABLE posts (
-    `id` INT AUTO_INCREMENT PRIMARY KEY,
-    `user_id` INT DEFAULT NULL,
-    `title` VARCHAR(255),
-    `content` TEXT,
-    `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    `updated_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-
-    FOREIGN KEY(`user_id`) REFERENCES users(`id`)
-); */
-
 class Post
 {
 	/**
