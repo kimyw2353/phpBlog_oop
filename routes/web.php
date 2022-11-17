@@ -30,3 +30,23 @@ Route::add('post', '/posts', '\App\Controllers\PostController::store', [
 	CsrfTokenMiddleware::class,
 	RequireMiddleware::class
 ]);
+
+//read post
+Route::add('get', '/posts/{id}', '\App\Controllers\PostController::show');
+
+//edit post
+Route::add('get', '/posts/{id}/edit', '\App\Controllers\PostController::edit', [
+	AuthMiddleware::class
+]);
+Route::add('patch', '/posts/{id}', '\App\Controllers\PostController::update', [
+	AuthMiddleware::class,
+	CsrfTokenMiddleware::class,
+	RequireMiddleware::class
+]);
+
+//delete post
+Route::add('delete', '/posts/{id}', '\App\Controllers\PostController::destroy', [
+	AuthMiddleware::class,
+	RequireMiddleware::class,
+	CsrfTokenMiddleware::class
+]);
