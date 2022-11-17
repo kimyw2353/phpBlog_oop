@@ -21,6 +21,7 @@
                         <li><a href="/users/register">Register</a></li>
                         <?php if (array_key_exists('user', $_SESSION)) : ?>
                             <li><a href="/posts/write">Write</a></li>
+	                        <li><a><?=explode('@', $_SESSION['user']->email)[0]?>님 로그인중</a></li>
                             <li><a href="#" id="logout">Sign out</a></li>
                         <?php else : ?>
                             <li><a href="/auth/login">Sign in</a></li>
