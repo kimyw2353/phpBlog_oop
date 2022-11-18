@@ -3,8 +3,8 @@
 namespace App\Controllers;
 
 use App\Services\UserService;
-use App\User;
 use Eclair\Support\Theme;
+use App\User;
 
 class UserController
 {
@@ -24,7 +24,7 @@ class UserController
 		
 		
 		$loc = UserService::register($user)
-			? 'Location: /auth/login'
+			? "Location: /auth/login"
 			: "Location: ".$_SERVER['HTTP_REFERER'];
 		
 		return header($loc);

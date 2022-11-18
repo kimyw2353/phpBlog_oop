@@ -8,9 +8,14 @@ class AuthService
 {
 	public static function login($email, $password)
 	{
-		$sql = 'SELECT * FROM users WHERE email = ?';
+		$sql = "
+			SELECT *
+			FROM users
+			WHERE email = ?
+			";
+		
 		if ($user = current(Adaptor ::getAll($sql, [$email], \App\User::class))) {
-			if (password_verify($password, $user->password)) {
+			if (password_verify($password, $user -> password)) {
 				return $_SESSION['user'] = $user;
 			}
 		}

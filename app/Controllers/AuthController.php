@@ -3,9 +3,7 @@
 namespace App\Controllers;
 
 use App\Services\AuthService;
-use Eclair\Database\Adaptor;
 use Eclair\Support\Theme;
-use App\Services\IndexService;
 
 class AuthController
 {

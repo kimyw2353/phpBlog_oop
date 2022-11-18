@@ -4,7 +4,6 @@ namespace App\Controllers;
 
 use App\Post;
 use App\Services\PostService;
-use Eclair\Database\Adaptor;
 use Eclair\Support\Theme;
 
 class PostController
