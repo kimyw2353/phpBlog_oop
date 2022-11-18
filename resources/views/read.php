@@ -1,28 +1,30 @@
 <div id="main__article" class="uk-container">
-가	<article class="uk-margin uk-article">
-		<h1 class="uk-article-title"><?=$post->title?></h1>
+	<article class="uk-margin uk-article">
+		<h1 class="uk-article-title"><?= $post -> title ?></h1>
 		<div class="uk-text-meta">
-			by <?=$post->getUsername()?>
+			by <?= $post -> getUsername() ?>
 		</div>
 		<div class="uk-text-meta">
-			<?=$post->getCreatedAt()?>
-			<?php if ($post->isOwner()) : ?>
+			<?= $post -> getCreatedAt() ?>
+			<?php
+			if ($post -> isOwner()) : ?>
 				<span class="owner">
                     <a href="#" class="uk-link-text" id="delete">Delete</a>
-                    <a href="/posts/<?=$post->id?>/edit" class="uk-link-text">Update</a>
+                    <a href="/posts/<?= $post -> id ?>/edit" class="uk-link-text">Update</a>
                 </span>
-			<?php endif; ?>
+			<?php
+			endif; ?>
 		</div>
-		<div class="uk-text-lead uk-margin-bottom"><?=$post->content?></div>
+		<div class="uk-text-lead uk-margin-bottom"><?= $post -> content ?></div>
 	</article>
 </div>
 
 <script>
     const $delete = document.getElementById('delete')
     $delete.addEventListener('click', () => {
-        fetch('/posts/' + '<?=$post->id?>', {
+        fetch('/posts/' + '<?=$post -> id?>', {
             method: 'delete',
-            body: JSON.stringify({ _csrfToken: '<?=$_SESSION['CSRF_TOKEN']?>' })
+            body: JSON.stringify({_csrfToken: '<?=$_SESSION['CSRF_TOKEN']?>'})
         }).then(() => {
             window.location = '/'
         })
